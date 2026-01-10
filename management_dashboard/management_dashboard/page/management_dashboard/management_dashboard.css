@@ -1,0 +1,143 @@
+.management-dashboard .md-filters {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	gap: 12px;
+	align-items: end;
+	margin-bottom: 16px;
+}
+
+.management-dashboard .md-kpis {
+	margin: 6px 0 16px;
+}
+
+.management-dashboard .md-kpis-header {
+	margin-bottom: 12px;
+}
+
+.management-dashboard .md-kpis-title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.management-dashboard .md-kpis-subtitle {
+	margin-top: 4px;
+	color: var(--text-muted);
+	font-size: 12px;
+}
+
+.management-dashboard .md-kpis-grid {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	gap: 12px;
+}
+
+.management-dashboard .md-kpi {
+	border: 1px solid var(--border-color);
+	border-radius: 12px;
+	background: var(--card-bg);
+	padding: 12px;
+}
+
+.management-dashboard .md-kpi-label {
+	color: var(--text-muted);
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+
+.management-dashboard .md-kpi-value {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.management-dashboard .md-grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.management-dashboard .md-card {
+	border: 1px solid var(--border-color);
+	border-radius: 12px;
+	background: var(--card-bg);
+	padding: 12px;
+	min-height: 120px;
+}
+
+.management-dashboard .md-card-title {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.management-dashboard .md-kpi-rows {
+	display: grid;
+	gap: 10px;
+}
+
+.management-dashboard .md-kpi-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.management-dashboard .md-kpi-row-label {
+	color: var(--text-muted);
+}
+
+.management-dashboard .md-kpi-row-value {
+	font-weight: 700;
+}
+
+.management-dashboard .md-list {
+	display: grid;
+	gap: 8px;
+}
+
+.management-dashboard .md-list-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 8px 10px;
+	border: 1px solid var(--border-color);
+	border-radius: 10px;
+}
+
+.management-dashboard .md-list-main {
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.management-dashboard .md-list-value {
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.management-dashboard .md-badge {
+	margin-left: 8px;
+	font-size: 11px;
+	color: var(--text-muted);
+	border: 1px solid var(--border-color);
+	border-radius: 999px;
+	padding: 1px 8px;
+}
+
+.management-dashboard .md-empty {
+	color: var(--text-muted);
+	padding: 18px 0;
+}
+
+@media (max-width: 1200px) {
+	.management-dashboard .md-kpis-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	.management-dashboard .md-grid-2 {
+		grid-template-columns: 1fr;
+	}
+	.management-dashboard .md-filters {
+		grid-template-columns: 1fr;
+	}
+}
+
